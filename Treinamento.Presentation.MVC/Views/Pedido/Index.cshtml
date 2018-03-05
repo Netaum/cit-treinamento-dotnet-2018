@@ -1,0 +1,31 @@
+﻿@using Treinamento.Presentation.MVC.Models
+
+@model List<PedidoModel>
+@{
+    ViewBag.Title = "Home Page Treinamento";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h2>Meus Pedidos</h2>
+        <table class="table table-bordered">
+            <tr>
+                <th>Codigo</th>
+                <th>Descricao</th>
+                <th>Numero</th>
+                <th>Data</th>
+                <th>TipoPedido</th>
+            </tr>
+            @foreach (var pedido in Model)
+            {
+                <tr>
+                    <td>@pedido.Codigo</td>
+                    <td>@pedido.Descricao</td>
+                    <td>@pedido.Numero</td>
+                    <td>@pedido.Data</td>
+                    <td>@pedido.TipoPedido</td>
+                </tr>
+            }
+        </table>
+    </div>
+
+</div>

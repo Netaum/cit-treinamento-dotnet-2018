@@ -1,0 +1,7 @@
+**/obj/**
+**/bin/**
+**/packages/**
+**/sqlite3/**
+*.suo
+**/Debug/**
+packages/

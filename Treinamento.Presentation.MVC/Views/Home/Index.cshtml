@@ -1,0 +1,25 @@
+﻿@using Treinamento.Presentation.MVC.Models
+
+@model List<PedidoModel>
+@{
+    ViewBag.Title = "Home Page Treinamento";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h2>Meus Pedidos</h2>
+        <table class="table table-bordered">
+            <tr>
+                <th>Codigo</th>
+                <th>Descricao</th>
+                <th>Numero</th>
+                <th>Data</th>
+                <th>TipoPedido</th>
+            </tr>
+            @foreach (var pedido in Model)
+            {
+                @Html.Partial("~/Views/Home/Tabela.cshtml", pedido)
+            }
+        </table>
+    </div>
+    
+</div>
