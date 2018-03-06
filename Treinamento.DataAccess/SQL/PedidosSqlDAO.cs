@@ -89,5 +89,17 @@ namespace Treinamento.DataAccess.SQL
 
 
         }
+
+        Pedido IPedidosDAO.RetornarPedido(int id)
+        {
+            var sqlQuery = "SELECT cd_pedido as Codigo, nr_numero_pedido as Numero, ds_pedido as Descricao, cd_tipo_pedido as TipoPedido, dt_pedido as Data, in_desligado as Desligado FROM tb_pedido WHERE cd_pedido = @cd_pedido";
+
+            using (SqlConnection sql = new SqlConnection(connectionString))
+            {
+
+                return sql.Query<Pedido>(sql: sqlQuery, commandType: CommandType.Text, param: new { cd_pedido = id }).SingleOrDefault();
+
+            }
+        }
     }
 }

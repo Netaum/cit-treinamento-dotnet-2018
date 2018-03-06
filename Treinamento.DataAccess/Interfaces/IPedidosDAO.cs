@@ -9,6 +9,9 @@ namespace Treinamento.DataAccess.Interfaces
 {
     public interface IPedidosDAO
     {
+
+        Pedido RetornarPedido(int id);
+         
         Pedido GravarNovoPedido(Pedido pedido);
 
         void AtualizarPedido(Pedido pedido);

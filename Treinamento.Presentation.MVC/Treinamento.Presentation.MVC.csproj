@@ -146,6 +146,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PedidoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -186,6 +188,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Pedido\Index.cshtml" />
     <Content Include="Views\Pedido\Novo.cshtml" />
+    <Content Include="Views\Pedido\Editar.cshtml" />
+    <Content Include="Views\Pedido\Excluir.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

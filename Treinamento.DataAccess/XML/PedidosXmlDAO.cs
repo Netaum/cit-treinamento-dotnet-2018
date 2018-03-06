@@ -101,5 +101,9 @@ namespace Treinamento.DataAccess.XML
             return codigo;
         }
 
+        public Pedido RetornarPedido(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

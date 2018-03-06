@@ -10,6 +10,8 @@ namespace Treinamento.Business.Interfaces
     {
         List<Entities.Pedido> RetornarItens();
 
+        Entities.Pedido RetornarPedido(int id);
+
         Entities.Pedido GravarPedido(Entities.Pedido pedido);
 
         void AtualizarPedido(Entities.Pedido pedido);

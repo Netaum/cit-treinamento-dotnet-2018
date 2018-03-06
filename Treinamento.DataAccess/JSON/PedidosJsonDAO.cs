@@ -70,5 +70,10 @@ namespace Treinamento.DataAccess.JSON
 
             return pedidos;
         }
+
+        public Pedido RetornarPedido(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
